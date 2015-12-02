@@ -1,0 +1,15 @@
+{
+  "name": "shift-background",
+  "version": "1.0.0",
+  "description": "background shifting experiment with node and socket.io",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "daniel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.10.2",
+    "socket.io": "^1.3.7"
+  }
+}
