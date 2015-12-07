@@ -3,11 +3,9 @@ var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
-<<<<<<< HEAD
-app.use(express.static('/'));
-=======
+var port = process.env.PORT || 3000;
+
 app.use(express.static(__dirname + '/'))
->>>>>>> 9620afc275b263a8f26a1b1119cc709eff86eee4
 
 io.on('connection', function(socket) {
     console.log('a user connected');
@@ -17,6 +15,6 @@ io.on('connection', function(socket) {
     });
 });
 
-http.listen(3000, function() {
-    console.log('listening on *:3000');
+http.listen(port, function() {
+    console.log('listening on *: ' + port);
 });
