@@ -31,6 +31,7 @@
         $('#submitColor').click(function(e) {
             socket.emit('colors', $('#pickColor').val());
             $('#pickColor').val('#');
+            console.log('here');
             return false;
         });
         socket.on('colors', function(color) {
