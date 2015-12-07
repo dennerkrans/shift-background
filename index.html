@@ -5,58 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shift Background</title>
+    <link rel="stylesheet" href="/style.css">
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-            font-family: monospace;
-            font-size: 4vw;
-        }
         
-        body {
-            background: #404040;
-        }
-        
-        .third {
-            height: 33vh;
-            width: 100vw;
-            float: left;
-            text-align: center
-        }
-        
-        #inputField,
-        #pickColor,
-        #submitColor {
-            display: none;
-        }
-        
-        @media only screen and (max-width: 767px),
-        only screen and (max-device-width: 767px) {
-            #inputField {
-                margin-top: 7vw;
-                display: inline-block;
-            }
-            #pickColor {
-                text-align: center;
-                width: 25vw;
-                height: 5vh;
-                margin: 1vw 0 0 0;
-                display: inherit
-            }
-            #submitColor {
-                border: none;
-                background: rgba(0, 0, 0, 0);
-                font-size: 4vw;
-                margin: 1vw 0 0 0;
-                display: inherit
-            }
-        }
     </style>
 </head>
 
 <body>
     <div class="third">
-
     </div>
     <div class="third">
         <div id="inputField">
@@ -69,9 +25,9 @@
 
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
+    
     <script>
         var socket = io();
-
         $('#submitColor').click(function(e) {
             socket.emit('colors', $('#pickColor').val());
             $('#pickColor').val('#');
