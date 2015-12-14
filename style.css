@@ -1,43 +1,42 @@
+body {
+    background: #404040;
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    font-size: 4vw;
+}
 
-        body {
-            padding: 0;
-            margin: 0;
-            font-family: monospace;
-            font-size: 4vw;
-            background: #404040;
-        }
+.third {
+    height: 33vh;
+    width: 100vw;
+    float: left;
+    text-align: center
+}
 
-        .third {
-            height: 33vh;
-            width: 100vw;
-            float: left;
-            text-align: center
-        }
+#inputField,
+#pickColor,
+#submitColor {
+    display: none;
+}
 
-        #inputField,
-        #pickColor,
-        #submitColor {
-            display: none;
-        }
-
-        @media only screen and (max-width: 767px),
-        only screen and (max-device-width: 767px) {
-            #inputField {
-                margin-top: 7vw;
-                display: inline-block;
-            }
-            #pickColor {
-                text-align: center;
-                width: 25vw;
-                height: 5vh;
-                margin: 1vw 0 0 0;
-                display: inherit
-            }
-            #submitColor {
-                border: none;
-                background: rgba(0, 0, 0, 0);
-                font-size: 4vw;
-                margin: 1vw 0 0 0;
-                display: inherit
-            }
-        }
+@media only screen and (max-width: 767px),
+only screen and (max-device-width: 767px) {
+    #inputField {
+        margin-top: 7vw;
+        display: inline-block;
+    }
+    #pickColor {
+        text-align: center;
+        width: 25vw;
+        height: 5vh;
+        margin: 1vw 0 0 0;
+        display: inherit
+    }
+    #submitColor {
+        border: none;
+        background: rgba(0, 0, 0, 0);
+        font-size: 4vw;
+        margin: 1vw 0 0 0;
+        display: inherit
+    }
+}
